@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="" id="theme-link">
+    <title>GitHub Finder</title>
+  </head>
+  <body>
+
+    <!-- header -->
+    <div class="container-header">
+      <header>
+        <h1>GitHub Finder
+          <img class='icon' src="assets/github-icon.png" alt="github-icon">
+        </h1>
+      </header>
+    </div>
+
+    <!-- form -->
+    <div class="container-form">
+      <label for="user"> Usuário </label>
+      <input
+        type="text"
+        name="user"
+        id="user"
+        placeholder="Digite o nome de usuário"/>
+
+      <input class="button" type="submit" onclick="getApi()" />
+      
+      <div class="container-button"></div>
+        <input class="btn-toggle" type="button" value="Dark Mode 🌙"></input>
+      </div>
+      
+      <footer>
+        Editado por: <a href="https://github.com/verasdan" target="_blank">&reg;Danilo Veras&trade;</a>
+      </footer>
+    </div>
+
+    <!-- container-respost -->
+    <div class="container-respost" style="display: none;">
+      <img class="img" src="" alt="" />
+      <p class="bio"></p>
+      <div class="container-numbers">
+        <ul>
+          <li class="public-repost"></li>
+          <li class="followers"></li>
+        </ul>
+      </div>
+    </div>
+
+    
+    
+
+    <script src="script/apiGitHub.js"></script>
+    <script src="script/darkmode.js"></script>
+  </body>
+</html>
